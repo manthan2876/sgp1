@@ -1,0 +1,82 @@
+.
+├── README.md
+├── directory_structure.txt
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── Images
+│   │   ├── item-1.jpg
+│   │   ├── item-2.jpg
+│   │   ├── item-3.jpg
+│   │   └── item-4.jpg
+│   └── vite.svg
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── Components
+│   │   ├── Auth
+│   │   │   ├── Login
+│   │   │   │   ├── Login.jsx
+│   │   │   │   └── LoginForm.jsx
+│   │   │   ├── SignUp
+│   │   │   │   ├── SignUp.jsx
+│   │   │   │   └── SignUpForm.jsx
+│   │   │   └── ToggleRole.jsx
+│   │   ├── Footer
+│   │   │   └── Footer.jsx
+│   │   ├── Hero
+│   │   │   ├── Home
+│   │   │   │   └── Home.jsx
+│   │   │   └── Slider
+│   │   │       ├── GetLatestNews.jsx
+│   │   │       ├── GetRewards.jsx
+│   │   │       ├── JoinCommunity.jsx
+│   │   │       └── SwiperSlider.jsx
+│   │   ├── Items
+│   │   │   ├── AllItemsPage.jsx
+│   │   │   ├── Items.jsx
+│   │   │   ├── ItemsList.jsx
+│   │   │   ├── StampCard.jsx
+│   │   │   └── StampDetailsPage.jsx
+│   │   ├── Navbar
+│   │   │   ├── Desktop-Menu
+│   │   │   │   ├── DesktopMenu.jsx
+│   │   │   │   ├── MenuItems.jsx
+│   │   │   │   ├── SearchBar.jsx
+│   │   │   │   └── UserMenu.jsx
+│   │   │   ├── Mobile-Menu
+│   │   │   │   ├── MobileDropdownMenu.jsx
+│   │   │   │   └── MobileMenu.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── NavbarLogo.jsx
+│   │   │   └── TopBar.jsx
+│   │   ├── News
+│   │   │   ├── AllNewsPage.jsx
+│   │   │   ├── NewsCard.jsx
+│   │   │   ├── NewsDetailPage.jsx
+│   │   │   └── NewsList.jsx
+│   ├── Layouts
+│   │   └── GuestLayout.jsx
+│   ├── UI
+│   │   └── BackButton.jsx
+│   ├── assets
+│   │   ├── Events.gif
+│   │   ├── Gift.gif
+│   │   ├── Social media.gif
+│   │   ├── india-post-logo.webp
+│   │   └── react.svg
+│   ├── context
+│   │   ├── CartContext.jsx
+│   │   ├── DarkModeContext.jsx
+│   │   ├── EventContext.jsx
+│   │   ├── NewsContext.jsx
+│   │   └── StampContext.jsx
+│   ├── index.css
+│   └── main.jsx
+├── tailwind.config.js
+└── vite.config.js
+
+20 directories, 62 files

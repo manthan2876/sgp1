@@ -1,0 +1,109 @@
+.
+├── README.md
+├── app.js
+├── config
+│   ├── db.js
+│   ├── shiprocket.js
+│   └── stripe.config.js
+├── controllers
+│   ├── Community-comments.controller.js
+│   ├── Community-post.controller.js
+│   ├── Community-reaction.controller.js
+│   ├── admin.dashboard.controller.js
+│   ├── auth.controller.js
+│   ├── event.controller.js
+│   ├── gallery.controller.js
+│   ├── news.controller.js
+│   ├── order.controller.js
+│   ├── payment.controller.js
+│   ├── pda.controller.js
+│   ├── pdaOrder.controller.js
+│   ├── philatelicItem.controller.js
+│   ├── postalCircle.controller.js
+│   ├── subscriber.controller.js
+│   ├── user.controller.js
+│   └── wallet.controller.js
+├── directory_structure.txt
+├── middlewares
+│   ├── authenticatePostalCircle.js
+│   ├── authenticateuser.js
+│   ├── errorHandler.js
+│   ├── isAdmin.js
+│   ├── isMediator.js
+│   └── uploads.js
+├── models
+│   ├── Community-Comments.model.js
+│   ├── Community-Reaction.model.js
+│   ├── Community-post.model.js
+│   ├── Event.model.js
+│   ├── News.model.js
+│   ├── Order.model.js
+│   ├── PDA.model.js
+│   ├── PdaOrder.model.js
+│   ├── PhilatelicItem.model.js
+│   ├── PostalCircle.model.js
+│   ├── Subscriber.model.js
+│   ├── User.model.js
+│   ├── WalletTransaction.model.js
+│   ├── Wishlist.model.js
+│   └── gallery.model.js
+├── package-lock.json
+├── package.json
+├── routes
+│   ├── Community-comments.route.js
+│   ├── PdaOrder.route.js
+│   ├── admin.route.js
+│   ├── auth.route.js
+│   ├── community-post.route.js
+│   ├── community-reaction.route.js
+│   ├── event.route.js
+│   ├── gallery.route.js
+│   ├── news.route.js
+│   ├── payment.route.js
+│   ├── pda.route.js
+│   ├── philatelicItem.route.js
+│   ├── postalCircle.route.js
+│   ├── subscriber.route.js
+│   ├── user.route.js
+│   └── wallet.route.js
+├── server.js
+├── services
+│   └── shiprocket.service.js
+├── text.txt
+├── uploads
+│   ├── philatelicItemImg
+│   │   ├── 1733923349780-Screenshot 2024-12-05 001818.png
+│   │   ├── 1733923409165-Screenshot 2024-12-05 001818.png
+│   │   ├── 1733946028512-vasu.png
+│   │   ├── 1733946065198-vasu.png
+│   │   ├── 1733946341489-vasu.png
+│   │   ├── 1733946588989-vasu.png
+│   │   ├── 1733946684969-vasu.png
+│   │   ├── 1733946966751-vasu.png
+│   │   ├── 1733947114531-vasu.png
+│   │   ├── 1733947182981-vasu.png
+│   │   ├── 1733947193056-vasu.png
+│   │   ├── 1733947977143-vasu.png
+│   │   ├── 1733948214835-vasu.png
+│   │   ├── 1733949725027-vasu.png
+│   │   ├── 1733949833133-vasu.png
+│   │   ├── 1733951954294-vasu.png
+│   │   ├── 1733953209849-vasu.png
+│   │   ├── 1733953269978-vasu.png
+│   │   ├── 1733953275562-vasu.png
+│   │   ├── 1733954079128-vasu.png
+│   │   ├── 1733954103590-vasu.png
+│   │   ├── 1733955541662-nature2.jpg
+│   │   ├── 1733955588333-vasu.png
+│   │   ├── 1733955610088-nature2.jpg
+│   │   ├── 1733956193535-nature2.jpg
+│   │   ├── 1733976165942-Screenshot from 2024-12-04 11-26-20.png
+│   │   ├── 1733976236633-Screenshot from 2024-12-04 11-26-20.png
+│   │   └── 1733976430462-Screenshot from 2024-11-29 23-35-43.png
+│   └── profileImages
+│       └── 67370a09c777fee99cd8261c-1731669376210-Screenshot from 2024-11-14 13-15-17.png
+└── utils
+    ├── mailer.js
+    └── otp.js
+
+11 directories, 96 files

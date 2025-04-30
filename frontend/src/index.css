@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-google-bg {
+    background-color: #db4437;
+  }
+  
+  .hover\:bg-google-hover:hover {
+    background-color: #c1351d;
+  }
+  
+  .bg-facebook-bg {
+    background-color: #959514;
+  }
+  
+  .hover\:bg-facebook-hover:hover {
+    background-color: #959514;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .btn {
+    padding: 10px;
+    background-color: #959514;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #959514;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .mt-2 {
+    margin-top: 10px;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
