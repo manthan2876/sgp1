@@ -46,7 +46,7 @@ const NewsFormModal = ({ showModal, closeModal, setTemp }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/postal-circles", {
+      .get("https://sgp-51vb.onrender.com0/api/postal-circles", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -83,7 +83,7 @@ const NewsFormModal = ({ showModal, closeModal, setTemp }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/news", formData, {
+      .post("https://sgp-51vb.onrender.com0/api/news", formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

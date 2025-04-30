@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
 
   const signUp = (formData) => {
     axios
-      .post(`http://localhost:5000/api/auth/register`, formData)
+      .post(`https://sgp-51vb.onrender.com/api/auth/register`, formData)
       .then((res) => {
         console.log(res.data);
         localStorage.setItem("token", res.data.token);
@@ -66,7 +66,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (loginData) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://sgp-51vb.onrender.com/api/auth/login",
         loginData
       );
       console.log("inside authContext",response.data);
@@ -98,7 +98,7 @@ export const AuthProvider = ({ children }) => {
       try {
         // Attempt to register the user
         const registerResponse = await axios.post(
-          "http://localhost:5000/api/auth/register",
+          "https://sgp-51vb.onrender.com/api/auth/register",
           userInfo,
           { withCredentials: true }
         );
@@ -112,7 +112,7 @@ export const AuthProvider = ({ children }) => {
         if (registerError.response && registerError.response.status === 400) {
           // User already exists, so log them in instead
           const loginResponse = await axios.post(
-            "http://localhost:5000/api/auth/login",
+            "https://sgp-51vb.onrender.com/api/auth/login",
             {
               email: userInfo.email,
               password: userInfo.password,
@@ -152,7 +152,7 @@ export const AuthProvider = ({ children }) => {
       console.log(userId)
 
       const response = await axios.get(
-        `http://localhost:5000/api/user/${userId}`,
+        `https://sgp-51vb.onrender.com/api/user/${userId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

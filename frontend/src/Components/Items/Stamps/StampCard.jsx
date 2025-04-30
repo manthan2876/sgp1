@@ -41,7 +41,7 @@ const StampCard = ({ stamp }) => {
     try {
       if (isFavorited) {
         const response = await axios.delete(
-          `http://localhost:5000/api/user/wishlist/remove/${stamp._id}`,
+          `https://sgp-51vb.onrender.com/api/user/wishlist/remove/${stamp._id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -57,7 +57,7 @@ const StampCard = ({ stamp }) => {
         }
       } else {
         const response = await axios.post(
-          "http://localhost:5000/api/user/wishlist/add",
+          "https://sgp-51vb.onrender.com/api/user/wishlist/add",
           { productId: stamp._id },
           {
             headers: { Authorization: `Bearer ${token}` },

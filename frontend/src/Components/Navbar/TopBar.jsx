@@ -15,7 +15,7 @@ const TopBar = () => {
 
   const logOut = () => {
     axios
-      .post('http://localhost:5000/api/auth/logout')
+      .post('https://sgp-51vb.onrender.com/api/auth/logout')
       .then(() => {
         console.log("logged out...");
         setTemp((prev) => !prev);

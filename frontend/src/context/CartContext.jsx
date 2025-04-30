@@ -15,7 +15,7 @@ export const CartProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/user/cart/items`, {
+      .get(`https://sgp-51vb.onrender.com/api/user/cart/items`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -27,7 +27,7 @@ export const CartProvider = ({ children }) => {
 
   const getCart = () => {
     axios
-      .get(`http://localhost:5000/api/user/cart/items`, {
+      .get(`https://sgp-51vb.onrender.com/api/user/cart/items`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -48,7 +48,7 @@ export const CartProvider = ({ children }) => {
   
     axios
       .put(
-        `http://localhost:5000/api/user/cart/editItem/${cartItemId}`,
+        `https://sgp-51vb.onrender.com/api/user/cart/editItem/${cartItemId}`,
         { delta },
         {
           headers: { Authorization: `Bearer ${token}` },
@@ -73,7 +73,7 @@ export const CartProvider = ({ children }) => {
   const removeItem = (cartItemId) => {
     axios
       .put(
-        `http://localhost:5000/api/user/cart/remove/${cartItemId}`,
+        `https://sgp-51vb.onrender.com/api/user/cart/remove/${cartItemId}`,
         {},
         {
           headers: { Authorization: `Bearer ${token}` },

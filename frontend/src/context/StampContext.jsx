@@ -14,7 +14,7 @@ export const StampProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/admin/get-item`)
+      .get(`https://sgp-51vb.onrender.com/api/admin/get-item`)
       .then((res) => {
         console.log(res.data)
         setStamps(res.data);

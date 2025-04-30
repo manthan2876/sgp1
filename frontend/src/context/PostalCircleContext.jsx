@@ -12,7 +12,7 @@ export const PostalCircleProvider = ({ children }) => {
 
     // console.log("inside postalCircleContext:", token);
     
-    axios.get(`http://localhost:5000/api/admin/allpostCircleDetail`,{
+    axios.get(`https://sgp-51vb.onrender.com/api/admin/allpostCircleDetail`,{
       headers: {
         Authorization: `Bearer ${token}`, // Add token to the Authorization header
       },

@@ -30,7 +30,7 @@ function SignUp() {
 
   const sendEmailOtp = async (email) => {
     try {
-      await axios.post("http://localhost:5000/api/auth/send-email-otp", {
+      await axios.post("https://sgp-51vb.onrender.com/api/auth/send-email-otp", {
         email,
       });
       message.success("OTP sent to your email!");
@@ -41,7 +41,7 @@ function SignUp() {
 
   const verifyEmailOtp = async (email, otp) => {
     try {
-      await axios.post("http://localhost:5000/api/auth/verify-email-otp", {
+      await axios.post("https://sgp-51vb.onrender.com/api/auth/verify-email-otp", {
         email,
         otp,
       });
@@ -53,7 +53,7 @@ function SignUp() {
 
   const sendPhoneOtp = async (phone) => {
     try {
-      await axios.post("http://localhost:5000/api/auth/send-otp", {
+      await axios.post("https://sgp-51vb.onrender.com/api/auth/send-otp", {
         phoneNumber: phone,
       });
       message.success("OTP sent to your phone!");
@@ -64,7 +64,7 @@ function SignUp() {
 
   const verifyPhoneOtp = async (phone, otp) => {
     try {
-      await axios.post("http://localhost:5000/api/auth/verify-otp", {
+      await axios.post("https://sgp-51vb.onrender.com/api/auth/verify-otp", {
         phoneNumber: phone,
         otp,
       });
@@ -83,7 +83,7 @@ function SignUp() {
 
     try {
       await axios
-        .post("http://localhost:5000/api/auth/register", signUpData)
+        .post("https://sgp-51vb.onrender.com/api/auth/register", signUpData)
         .then((res) => {
           console.log(res.data);
         });

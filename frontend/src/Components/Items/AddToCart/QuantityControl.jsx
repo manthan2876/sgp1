@@ -8,7 +8,7 @@ const QuantityControl = ({ quantity, itemId }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/user/cart/items`, {
+      .get(`https://sgp-51vb.onrender.com/api/user/cart/items`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -22,7 +22,7 @@ const QuantityControl = ({ quantity, itemId }) => {
   const updateQuantity = (cartItemId, delta) => {
     axios
       .put(
-        `http://localhost:5000/api/user/cart/editItem/${cartItemId}`,
+        `https://sgp-51vb.onrender.com/api/user/cart/editItem/${cartItemId}`,
         { delta },
         {
           headers: { Authorization: `Bearer ${token}` },

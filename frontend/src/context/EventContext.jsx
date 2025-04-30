@@ -13,7 +13,7 @@ export const EventProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/events")
+      .get("https://sgp-51vb.onrender.com/api/events")
       .then((res) => {
         let demo = res.data;
         let pendingEvents = [];

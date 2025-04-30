@@ -44,7 +44,7 @@ function LoginForm({
     const postalData = {"unique_id": loginData.email, "password": loginData.password};
     
     axios
-      .post(`http://localhost:5000/api/postal-circles/login`, postalData)
+      .post(`https://sgp-51vb.onrender.com/api/postal-circles/login`, postalData)
       .then((res) => {
         console.log(res.data);
         localStorage.setItem("token", res.data.token);

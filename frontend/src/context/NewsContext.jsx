@@ -10,7 +10,7 @@ export const NewsProvider = ({ children }) => {
   const [newsData, setNewsData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/news")
+    axios.get("https://sgp-51vb.onrender.com/api/news")
     .then((res) => {
       // console.log("News fetched");
       let demo = res.data;

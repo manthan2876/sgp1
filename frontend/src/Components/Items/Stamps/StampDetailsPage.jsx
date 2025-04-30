@@ -55,7 +55,7 @@ const StampDetailsPage = () => {
   const handleAddToCart = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/user/cart/add",
+        "https://sgp-51vb.onrender.com/api/user/cart/add",
         {
           itemId: stamp._id,
           quantity: quantity,
